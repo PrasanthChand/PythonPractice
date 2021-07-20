@@ -2,14 +2,14 @@
 
 import re
 
-pattern = '^a...s$'
-test_string = 'abyss'
+pattern = '^p.*s$'
+test_string = 'parents'
 result = re.match(pattern, test_string)
 
 if result:
-    print("Search successful.")
+    print("Found pattern.")
 else:
-    print("Search unsuccessful.")
+    print("Pattern not found.")
 
 
 
