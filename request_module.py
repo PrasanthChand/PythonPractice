@@ -1,4 +1,4 @@
-# requests module
+# requests module demo to get time from a API
 
 import requests
 import json
