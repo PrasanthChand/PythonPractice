@@ -11,5 +11,10 @@ ssh_client.connect(hostname=ip, username=username, password=passwd)
 
 cmd = "isi status"
 stdin, stdout, stderr = ssh_client.exec_command(cmd)
-for line in stdout:
+
+# out = stdout.readlines()[2]
+# print(out)
+
+out = stdout.readlines()
+for line in out:
     print(line)
